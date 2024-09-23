@@ -14,7 +14,7 @@ def index(request):
         title                   = "Open full-screen map",                       
         title_cancel            = "Close full-screen map",                      
         force_separate_button   = True,                                         
-    ).add_to(map_) 
+    ).add_to(m) 
 
     # List of schools with their coordinates and popup info
     schools = [
