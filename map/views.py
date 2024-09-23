@@ -1,6 +1,7 @@
 from django.shortcuts import render
 import folium
-from folium.plugins import MarkerCluster, Fullscreen
+from folium import plugins
+from folium.plugins import MarkerCluster
 import branca
 
 # Create your views here.
