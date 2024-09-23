@@ -1,11 +1,19 @@
 from django.shortcuts import render
 import folium
-from folium.plugins import MarkerCluster
+from folium.plugins import MarkerCluster, Fullscreen
 import branca
 
 # Create your views here.
 def index(request):
     m = folium.Map(location=[4.9757, 8.3417], zoom_start=12, tiles="OpenStreetMap")
+
+    # Add the full screen button.                                               
+    plugins.Fullscreen(                                                         
+        position                = "topright",                                   
+        title                   = "Open full-screen map",                       
+        title_cancel            = "Close full-screen map",                      
+        force_separate_button   = True,                                         
+    ).add_to(map_) 
 
     # List of schools with their coordinates and popup info
     schools = [
